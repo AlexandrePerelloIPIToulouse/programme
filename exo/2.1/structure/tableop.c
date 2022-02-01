@@ -33,11 +33,15 @@ float c1;
 	printf("Saisir une valeur : ");
         scanf("%f",&b);
 
-        for (float i = 0; i < 11 ; i++){
-        c1=b/i;
-         printf("%f / %f = %f\t\n",b,i,c1);
-        } 
+	if (b==0){printf("Erreur\n");
+	}
+	else
+	{ for (float i = 1; i < 11 ; i++){
 
+         c1=b/i;
+         printf("%.0f / %.0f = %.2f\t\n",b,i,c1);
+        } 
+	}
 }
 
 
